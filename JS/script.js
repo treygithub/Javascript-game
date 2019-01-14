@@ -221,3 +221,15 @@ function winGame(){
     on = false;
     win=true;
 }
+//end of game code...
+
+window.onload = function () {
+    if (document.cookie.length != 0 ){
+        var nameValueArray = document.cookie.split("=");
+        documemnt.track = nameValueArray[1];
+        document.getElementById("redAlert").value = nameValueArray[1];
+    }
+}
+//function setIpAddressCookie(){
+    //let 
+//}
